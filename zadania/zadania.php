@@ -54,20 +54,3 @@ Zdzisiu Pierdzipieta 55 lat <br> <br>
 następnie utwórz metodę dodajOsobe() która uzupełni tablice danymi. <br>
 ($dane = Array('imie'=>'Piotr', 'nazwisko'=>'Moje nazwisko', 'wiek'=>'21')). <br>
 Następnie napisz metodę pokazOsobe() która wyświetli te dane, może być print_r(); <br> <br>
-
-4. Na podstawie tabeli "pages" wyświetl drzewo struktury menu strony. Za pomocą jednego zapytania SQL, <br>
-stosując rekurencję. Pole "parent_id" zawiera ID rodzica. <br>
-Wynik działania: <br>
-Strona główna <br>
-Nowości <br>
--->Nowe <br>
--->Archiwum <br>
-Oferta <br>
--->Portfele <br>
--->Teczki <br>
--->Etui na wizytówki <br>
--->Torby <br>
--->Aktówki <br>
-Kontakt <br>
--->Formularz kontaktowy <br>
--->Dane kontaktowe <br>
