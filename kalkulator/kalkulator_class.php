@@ -1,4 +1,5 @@
 <?php
+
 class Kalkulator
 {
 
@@ -6,14 +7,11 @@ class Kalkulator
     {
         if ($znak == "+") {
             return $liczba_1 + $liczba_2;
-        }
-        elseif ($znak == "-") {
+        } elseif ($znak == "-") {
             return $liczba_1 - $liczba_2;
-        }
-        elseif ($znak == "*") {
+        } elseif ($znak == "*") {
             return $liczba_1 * $liczba_2;
-        }
-        elseif ($znak == "/") {
+        } elseif ($znak == "/") {
             return $liczba_1 / $liczba_2;
         }
     }

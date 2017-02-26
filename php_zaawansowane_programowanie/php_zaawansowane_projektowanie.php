@@ -1,8 +1,6 @@
 <html>
 <head>
     <title>php_zaawansowane_programowanie</title>
-    <link type='text/css' rel='stylesheet' href='style.css'/>
-
 </head>
 <body>
 

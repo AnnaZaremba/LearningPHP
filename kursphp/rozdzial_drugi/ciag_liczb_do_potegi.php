@@ -1,10 +1,12 @@
 <?php
-function potegowanie($a) {
-    for ($i = 1; $i <=10; $i++) {
+function potegowanie($a)
+{
+    for ($i = 1; $i <= 10; $i++) {
         $wynik = pow($i, $a);
-        echo $i ."^" . $a ." = " . $wynik . "<br>";
+        echo $i . "^" . $a . " = " . $wynik . "<br>";
     }
 }
+
 ?>
 <html>
 <head>

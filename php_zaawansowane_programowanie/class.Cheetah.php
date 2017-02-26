@@ -1,7 +1,8 @@
 <?php
 require_once('class.Cat.php');
 
-class Cheetah extends Cat {
+class Cheetah extends Cat
+{
     public $numberOfSpots;
 
     public function __construct()

@@ -13,7 +13,6 @@ $tablicaWynikow = pg_fetch_all($result);
 <html>
 <head>
     <title>formularz</title>
-    <link type='text/css' rel='stylesheet' href='style.css'/>
 </head>
 <body>
 

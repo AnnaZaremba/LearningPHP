@@ -474,7 +474,7 @@ for ($i = 0; $i < $length; $i++) {
 
     $array = array(5, 4, 9);
     sort($array);                                               //sortuje od najmniejszej do największej
-    print join(",", $array) . '<br />';                         // dalaczego dajemy ","?
+    print join(",", $array) . '<br />';
 
     rsort($array);                                              //sortuje od największej do najmniejszej
     print join(",", $array);

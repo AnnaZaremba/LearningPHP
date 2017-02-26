@@ -22,7 +22,7 @@
 <?php
 include_once 'kalkulator_class.php'; // pobiera klase
 
-if(isset($_POST['liczba_1'])) {
+if (isset($_POST['liczba_1'])) {
     $liczba_1 = $_POST['liczba_1'];
     $liczba_2 = $_POST['liczba_2'];
     $znak = $_POST['znak'];

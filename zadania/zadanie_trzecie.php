@@ -17,8 +17,8 @@ class Osoba
     }
 }
 
-$nowaOsoba=new dodajOsobe();
-$nowaOsoba->dane=array('imie' => 'Piotr', 'nazwisko' => 'Moje nazwisko', 'wiek' => '21');
+$nowaOsoba = new dodajOsobe();
+$nowaOsoba->dane = array('imie' => 'Piotr', 'nazwisko' => 'Moje nazwisko', 'wiek' => '21');
 echo $nowaOsoba->dodajOsobe();
 
 

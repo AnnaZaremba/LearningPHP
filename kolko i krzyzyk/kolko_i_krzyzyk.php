@@ -1,18 +1,4 @@
 <?php
-//$computer = "";
-//$player = "";
-//
-//for (dopóki nikt nie wygra i nie ma remisu) {
-//    echo "aktualny stan gry";
-//    if (ruch komputera) {
-//        echo $computer;
-//    }
-//    elseif {
-//        echo $player;
-//        }
-//
-//}
-
 
 //Kółko-Krzyżyk, jedna z najbardziej popularnych gier. Każdy z nas grał w nią na pewno wiele razy. Założeniem gry jest ułożenie w jednym rzędzie (pion lub poziom) lub w skosie trzech takich samych znaków (istnieje 8 takich możliwości - 3 w pionie, 3 w poziomie i dwa pod skosem).
 //

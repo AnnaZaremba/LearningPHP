@@ -13,11 +13,11 @@ $data[0]['imie'] = 'imie';
 $data[0]['nazwisko'] = 'nazwisko';
 $data[0]['wiek'] = 'wiek';
 
-$datas = array_merge($data,$result);
+$datas = array_merge($data, $result);
 
-foreach($datas as $key => $data){
-    foreach($data as $key_s => $single_data){
-        $datas[$key][$key_s] = iconv("UTF-8","cp1250", $single_data);
+foreach ($datas as $key => $data) {
+    foreach ($data as $key_s => $single_data) {
+        $datas[$key][$key_s] = iconv("UTF-8", "cp1250", $single_data);
     }
 }
 

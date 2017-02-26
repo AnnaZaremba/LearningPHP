@@ -1,8 +1,6 @@
 <html>
 <head>
     <title>Klasy</title>
-    <link type='text/css' rel='stylesheet' href='../style.css'/>
-    <!--polskie znaki-->
     <meta charset="UTF-8">
 </head>
 <body>
@@ -37,11 +35,11 @@ var_dump($objPetter);
 <?php
 require_once('class.Cheetah.php');
 
-function PetTheKitty(Cat $objCat) {
-    if($objCat->maxSpeed < 5) {
+function PetTheKitty(Cat $objCat)
+{
+    if ($objCat->maxSpeed < 5) {
         $objCat->purr();
-    }
-    else {
+    } else {
         print "Nie da się pogłaskać kotka - oddala się z prędkością " . $objCat->maxSpeed . " kilometrów na godzinę!";
     }
 }

@@ -3,7 +3,6 @@
     <meta charset="UTF-8">
 
     <title>Ania programuje</title>
-    <link type='text/css' rel='stylesheet' href='style.css'/>
 
 </head>
 <body>
@@ -20,20 +19,20 @@
 
 </form>
 
-<form method="post" action="proby.php">
+<form method="post" action="zadania/proby.php">
 
     <div><input type="submit" value="Próby"></div>
 
 </form>
 
 
-<form method="post" action="oop.php">
+<form method="post" action="zadania/oop.php">
 
     <div><input type="submit" value="OOP"></div>
 
 </form>
 
-<form method="post" action="htmlCSS.php">
+<form method="post" action="zadania/htmlCSS.php">
 
     <div><input type="submit" value="html CSS"></div>
 
@@ -44,12 +43,12 @@
     <div><input type="submit" value="Kalkulator"></div>
 </form>
 
-<form method="post" action="liczby_perwsze.php">
+<form method="post" action="zadania/liczby_perwsze.php">
 
     <div><input type="submit" value="Liczby perwsze"></div>
 </form>
 
-<form method="post" action="tabliczka_mnozenia.php">
+<form method="post" action="zadania/tabliczka_mnozenia.php">
 
     <div><input type="submit" value="Tabliczka mnożenia"></div>
 </form>
@@ -79,7 +78,7 @@
     <div><input type="submit" value="Odczytywanie plików"></div>
 </form>
 
-<form method="post" action="formularz.php">
+<form method="post" action="zadania/formularz.php">
 
     <div><input type="submit" value="Formularz"></div>
 </form>

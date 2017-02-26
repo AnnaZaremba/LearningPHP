@@ -1,8 +1,6 @@
 <html>
 <head>
-    <title>A loop of your own</title>
-    <link type='text/css' rel='stylesheet' href='../style.css'/>
-    <!--polskie znaki-->
+    <title>Zadanie pierwsze</title>
     <meta charset="UTF-8">
 </head>
 <body>
@@ -70,7 +68,7 @@ if (isset($_POST['wiek'])) {
 
 include_once 'ZapisDoBazyDanych.php'; // pobiera klase
 
-if(isset($_POST['imie']) && isset($_POST['nazwisko']) && isset($_POST['wiek'])) {
+if (isset($_POST['imie']) && isset($_POST['nazwisko']) && isset($_POST['wiek'])) {
     $imie = $_POST['imie'];
     $nazwisko = $_POST['nazwisko'];
     $wiek = $_POST['wiek'];

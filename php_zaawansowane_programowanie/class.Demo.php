@@ -1,6 +1,7 @@
 <?php
 
-class Demo {
+class Demo
+{
     private $_name;
 
 //    public function __construct($name)

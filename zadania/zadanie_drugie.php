@@ -3,9 +3,7 @@ include_once 'WyswietlenieTabeliZBazyDanych.php';
 ?>
 <html>
 <head>
-    <title>A loop of your own</title>
-    <link type='text/css' rel='stylesheet' href='../style.css'/>
-    <!--polskie znaki-->
+    <title>Zadanie drugie</title>
     <meta charset="UTF-8">
 </head>
 <body>

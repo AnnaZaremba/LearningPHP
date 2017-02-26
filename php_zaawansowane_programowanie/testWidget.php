@@ -1,8 +1,6 @@
 <html>
 <head>
-    <title>testWidget</title>
-    <link type='text/css' rel='stylesheet' href='../style.css'/>
-    <!--polskie znaki-->
+    <title>test Widget</title>
     <meta charset="UTF-8">
 </head>
 <body>
@@ -18,7 +16,6 @@ try {
 
     $objWidget->setName('Trampki');
     $objWidget->setDescription('Trampki o dużym przebiegu!');
-}
-catch (Exception $e) {
+} catch (Exception $e) {
     die("Wystąpił problem: " . $e->getMessage());
 }

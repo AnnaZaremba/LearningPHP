@@ -1,7 +1,6 @@
 <html>
 <head>
-    <title>A loop of your own</title>
-    <link type='text/css' rel='stylesheet' href='../style.css'/>
+    <title>Zadania</title>
     <!--polskie znaki-->
     <meta charset="UTF-8">
 </head>

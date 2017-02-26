@@ -2,8 +2,6 @@
 <head>
     <title>Rozdział Drugi</title>
     <meta charset="UTF-8">
-    <link type='text/css' rel='stylesheet' href='style.css'/>
-
 </head>
 <body>
 

@@ -15,8 +15,7 @@ function wypiszDzienTygodnia($data)
 $data['dzien'] = 26;
 $data['miesiac'] = 05;
 
-for ($rok= 2017; $rok <= 2027; $rok++)
-{
+for ($rok = 2017; $rok <= 2027; $rok++) {
     $data['rok'] = $rok;
     echo "W roku " . $rok . " Dzien Matki przypada w " . wypiszDzienTygodnia($data);
 }

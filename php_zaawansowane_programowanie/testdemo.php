@@ -1,8 +1,6 @@
 <html>
 <head>
-    <title>testdemo</title>
-    <link type='text/css' rel='stylesheet' href='../style.css'/>
-    <!--polskie znaki-->
+    <title>test demo</title>
     <meta charset="UTF-8">
 </head>
 <body>

@@ -16,7 +16,7 @@ $wyswietl .= " placki.";
 
 echo $wyswietl . "<br/>";
 
-echo 'Moje motto to: "'.$wyswietl.'"' . "<br/>" . "<br/>";
+echo 'Moje motto to: "' . $wyswietl . '"' . "<br/>" . "<br/>";
 
 
 // Można również łączyć wiele stringów w jednej linijce i przypisać je do jednej zmiennej
@@ -30,7 +30,7 @@ echo $wyswietl . "<br/>";
 
 // wyświetli napis:
 // Moje motto to: "Bardzo lubię placki."
-echo 'Moje motto to: "'.$wyswietl.'"' . "<br/>" . "<br/>";
+echo 'Moje motto to: "' . $wyswietl . '"' . "<br/>" . "<br/>";
 
 // Funkcja implode() łączy zbiór ciągów, przekazany w postaci tablicy PHP, w jeden, podzielony łącznikiem.
 // Przyjmuje dwa argumenty, w tym jeden opcjonalny. Jako pierwszy podajemy element łączący

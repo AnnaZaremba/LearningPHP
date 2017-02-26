@@ -1,8 +1,6 @@
 <html>
 <head>
     <title>Odczytywanie plików</title>
-    <link type='text/css' rel='stylesheet' href='../style.css'/>
-    <!--polskie znaki-->
     <meta charset="UTF-8">
 </head>
 <body>

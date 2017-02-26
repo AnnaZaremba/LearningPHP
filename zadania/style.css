@@ -1,23 +1,4 @@
-/** {*/
-    /*font-family: 'Georgia', 'Times', serif;*/
-/*}*/
-
-/*a {*/
-    /*color: SeaGreen;*/
-    /*text-decoration: none;*/
-/*}*/
-
-/*img {*/
-    /*border-radius: 100%;*/
-/*}*/
-
 body {
-    /* Old browsers */
-    /*background: #141E30;*/
-    /* Chrome 10-25, Safari 5.1-6 */
-    /*background: -webkit-linear-gradient(-45deg, #35577D, #141E30);*/
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /*background: linear-gradient(-45deg, #35577D, #141E30);*/
     margin: 0;
     padding: 0;
 }
@@ -50,7 +31,7 @@ h2 {
 
 p {
     color: AliceBlue;
-    font-family:'Helvetica', Arial, sans-serif;
+    font-family: 'Helvetica', Arial, sans-serif;
     line-height: 1.7em;
     text-align: left;
     font-size: 20px;

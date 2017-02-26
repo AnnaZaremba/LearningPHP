@@ -1,5 +1,3 @@
-
-
 <form method="post" action="/kalkulator/kalkulator_klasa.php">
 
     <div><input type="submit" value="kalkulator_klasa"></div>
@@ -11,7 +9,6 @@
     <div><input type="submit" value="kalkulator_test"></div>
 
 </form>
-
 
 
 <form method="POST" action="">
@@ -36,7 +33,7 @@
 </form>
 <?php
 
-if(isset($_POST['liczba_1'])) {
+if (isset($_POST['liczba_1'])) {
     $liczba_1 = $_POST['liczba_1'];
     $liczba_2 = $_POST['liczba_2'];
     $znak = $_POST['znak'];

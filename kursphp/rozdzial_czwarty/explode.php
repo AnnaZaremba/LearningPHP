@@ -17,9 +17,9 @@ $dane = "Marcin,Wesel,Bielsko-Biała";
 $dane_osobowe = explode(",", $dane);
 
 // wyświetlenie otrzymanej tablicy
-echo $dane_osobowe[0]."<br/>";
-echo $dane_osobowe[1]."<br/>";
-echo $dane_osobowe[2]."<br/>";
+echo $dane_osobowe[0] . "<br/>";
+echo $dane_osobowe[1] . "<br/>";
+echo $dane_osobowe[2] . "<br/>";
 
 //Wykorzystując funkcję explode, możemy w łatwy sposób policzyć np. ilość słów w tekście.
 // Wystarczy rozdzielić ciąg według spacji, a następnie zliczyć ilość indeksów w tablicy.

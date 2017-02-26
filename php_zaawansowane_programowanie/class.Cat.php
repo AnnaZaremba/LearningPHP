@@ -1,27 +1,34 @@
 <?php
-class Cat {
+
+class Cat
+{
     public $weight;
     public $furColor;
     public $whiskerLenght;
     public $maxSpeed;
 
-    public function eat(){
+    public function eat()
+    {
 
     }
 
-    public function sleep() {
+    public function sleep()
+    {
 
     }
 
-    public function hunt(Prey $objPrey) {
+    public function hunt(Prey $objPrey)
+    {
 
     }
 
-    public function purr() {
+    public function purr()
+    {
         print "mrrrr..." . "\n";
     }
 
-    public function petTheKitty(Cat $objCat) {
+    public function petTheKitty(Cat $objCat)
+    {
         $objCat->purr();
     }
 }

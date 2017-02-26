@@ -15,8 +15,8 @@ $reszta = $kwota_za_zamowione_towary - $wartosc_brutto_zamowionych_towarow;
 
 <?php
 echo "Wartość brutto zakupionych towarów: " . $wartosc_brutto_zamowionych_towarow . "<br/>";
-echo "Wpłacona kwota: " . $kwota_za_zamowione_towary .  "<br/>";
-echo "Reszta: " . $reszta .  "<br/>";
+echo "Wpłacona kwota: " . $kwota_za_zamowione_towary . "<br/>";
+echo "Reszta: " . $reszta . "<br/>";
 ?>
 
 </body>
