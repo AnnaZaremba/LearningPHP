@@ -11,9 +11,11 @@
  */
 require_once('class.DaneOsobowe.php');
 require_once('class.Warunek.php');
+require_once('class.Walidator.php');
 //var_dump($_POST);
 $daneOsobowe = new DaneOsobowe();
 $warunek = new Warunek();
+$walidator = new Walidator();
 
 $dane = $daneOsobowe->znajdzWszystkieElementy();
 if ($warunek->czyMozemyUsunac($_POST)) {
@@ -43,18 +45,13 @@ if ($warunek->czyMozemyUsunac($_POST)) {
 
     if (isset($_POST['imie'], $_POST['nazwisko'], $_POST['wiek'])) {
 
-        $imie = $_POST['imie'];
-        $nazwisko = $_POST['nazwisko'];
+        if (!$walidator->czyImieJestPoprawne($_POST['imie'])) {
+            echo "Imię jest błędne!" . "<br/>";
+        }
 
-        $sprawdz = '/^[A-ZŁŚ]{1}+[a-ząęółśżźćń]+$/';
-
-        if (preg_match($sprawdz, $imie)) {
-            if (preg_match($sprawdz, $nazwisko))
-                echo "Podano poprawne dane.";
-            else
-                echo "Błędne nazwisko!";
-        } else
-            echo "Błędne imię!";
+        if (!$walidator->czyNazwiskoJestPoprawne($_POST['nazwisko'])) {
+            echo "Nazwisko jest błędne!" . "<br/>";
+        }
     }
 
     if ($warunek->czyMozemyEdytowacDane($_POST)) {
@@ -98,11 +95,15 @@ if ($warunek->czyMozemyUsunac($_POST)) {
     </fieldset>
     <?php
     if ($warunek->czyMozemyDodacDoBazyDanych($_POST)) {
-        $daneOsobowe->zapisz($_POST['imie'], $_POST['nazwisko'], $_POST['wiek']);
+        if ($walidator->czyImieJestPoprawne($_POST['imie']) && $walidator->czyNazwiskoJestPoprawne($_POST['nazwisko'])) {
+            $daneOsobowe->zapisz($_POST['imie'], $_POST['nazwisko'], $_POST['wiek']);
+        }
     }
 
     if ($warunek->czyMozemyZapisacEdytowaneDane($_POST)) {
-        $daneOsobowe->edytuj($_POST['imie'], $_POST['nazwisko'], $_POST['wiek'], $_POST['id']);
+        if ($walidator->czyImieJestPoprawne($_POST['imie']) && $walidator->czyNazwiskoJestPoprawne($_POST['nazwisko'])) {
+            $daneOsobowe->edytuj($_POST['imie'], $_POST['nazwisko'], $_POST['wiek'], $_POST['id']);
+        }
     }
     ?>
 </form>
