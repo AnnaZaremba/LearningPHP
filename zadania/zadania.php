@@ -1,7 +1,6 @@
 <html>
 <head>
     <title>Zadania</title>
-    <!--polskie znaki-->
     <meta charset="UTF-8">
 </head>
 <body>

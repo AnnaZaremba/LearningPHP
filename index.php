@@ -1,9 +1,8 @@
 <html>
 <head>
-    <meta charset="UTF-8">
-
     <title>Ania programuje</title>
-
+    <!--polskie znaki-->
+    <meta charset="UTF-8">
 </head>
 <body>
 
