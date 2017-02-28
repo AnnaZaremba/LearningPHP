@@ -6,6 +6,8 @@
 </head>
 <body>
 
+
+
 <form method="post" action="porownywarka_mieszkan/formularz_dodawania.php">
 
     <div><input type="submit" value="Porównywarka mieszkań"></div>
