@@ -60,5 +60,11 @@
 
 </form>
 
+<form method="post" action="kontakt.php">
+
+    <div><input type="submit" value="Formularz kontaktu"></div>
+
+</form>
+
 </body>
 </html>
