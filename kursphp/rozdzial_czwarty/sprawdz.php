@@ -54,6 +54,7 @@ function szukajWulgaryzmow($tresc)
         echo "Tekst zawiera wulgarne słownictwo.";
 }
 
+
 function sprawdzDomene($email)
 {
     $domena = explode("@", $email);
