@@ -7,16 +7,17 @@
 
 <?php
 
-function sprawdz_email($email)
+function sprawdzEmail($email)
 {
     $spr = '/^[a-zA-Z0-9.\-_]+@[a-zA-Z0-9\-.]+\.[a-zA-Z]{2,4}$/';
-    if (preg_match($spr, $email))
+    if (preg_match($spr, $email)) {
         return true;
-    else
+    } else
         return false;
+
 }
 
-function sprawdz_imie($imie)
+function sprawdzImie($imie)
 {
     $sprawdz = '/^[a-zA-ZŁŚĆŹŻĄĘÓŃąęółśżźćń]+$/';
     if (preg_match($sprawdz, $imie)) {
@@ -26,22 +27,37 @@ function sprawdz_imie($imie)
         return false;
 }
 
-function sprawdz_telefon($telefon)
+function sprawdzTelefon($telefon)
 {
     $sprawdz = '/^[0-9]{9}+$/';
-    if (preg_match($sprawdz, $telefon))
+    if (preg_match($sprawdz, $telefon)) {
         return true;
-    else
+    } else
         return false;
 }
 
-function sprawdz_tresc($tresc)
+function sprawdzTresc($tresc)
 {
     $tresc = trim($tresc);
-    if (strlen($tresc) < 5)
+    if (strlen($tresc) < 5) {
         return false;
-    else
+    } else
         return $tresc;
+}
+
+function szukajWulgaryzmow($tresc)
+{
+    if (strpos($tresc, "cholera") == FALSE) // nie znaleziono szukanego wyrazu
+    {
+        echo "Można wyświetlić: $tresc.";
+    } else // znaleziono szukany wyraz
+        echo "Tekst zawiera wulgarne słownictwo.";
+}
+
+function sprawdzDomene($email)
+{
+    $domena = explode("@", $email);
+    echo $domena[1] . "<br/>";
 }
 
 $email = $_POST['email'];
@@ -50,29 +66,35 @@ $tel = $_POST['telefon'];
 $tresc = $_POST['tresc'];
 $blad_danych = false;
 
-if (!sprawdz_email($email)) {
+if (!sprawdzEmail($email)) {
     echo "Adres e-mail niepoprawny" . "<br/>";
     $blad_danych = true;
 }
-$imie = sprawdz_imie($imie);
+
+$imie = sprawdzImie($imie);
 if (!$imie) {
     echo "Imię wpisano niepoprawnie" . "<br/>";
     $blad_danych = true;
 }
-if (!sprawdz_telefon($tel)) {
+
+if (!sprawdzTelefon($tel)) {
     echo "Błędny format telefonu" . "<br/>";
     $blad_danych = true;
 }
-$tresc = sprawdz_tresc($tresc);
+
+$tresc = sprawdzTresc($tresc);
 if (!$tresc) {
     echo "Niepoprawna treść" . "<br/>";
     $blad_danych = true;
 }
+
 if ($blad_danych) {
     echo "Wystąpił jeden lub więcej błędów podczas przetwarzania danych." . "<br/>";
 } else {
     echo "Imię klienta: $imie" . "<br/>";
     echo "Adres e-mail: $email" . "<br/>";
+    echo "Domena: ";
+    echo sprawdzDomene($email);
     echo "Numer telefonu: $tel" . "<br/>";
     echo "Treść: $tresc" . "<br/>";
 }
