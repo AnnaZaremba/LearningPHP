@@ -6,7 +6,10 @@
 </head>
 <body>
 
+<form method="post" action="montujemymeble/montujemy_meble_index.php">
 
+    <div><input type="submit" value="Montujemy meble"></div>
+</form>
 
 <form method="post" action="porownywarka_mieszkan/formularz_dodawania.php">
 
@@ -33,7 +36,7 @@
 
 </form>
 
-<form method="post" action="zadania/htmlCSS.php">
+<form method="post" action="htmlCSS/htmlCSS.php">
 
     <div><input type="submit" value="html CSS"></div>
 
