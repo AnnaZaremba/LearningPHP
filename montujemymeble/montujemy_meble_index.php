@@ -135,19 +135,19 @@
         <div class="container">
             <div class="row Fresh">
                 <div class="col-md-4 Des">
-                    <i class="fa fa-heart"></i>
+                    <i class="fa fa-home"></i>
                     <h4>Profesjonalny montaż mebli</h4>
                     <p>Nulla consectetur ornare nibh, a auctor mauris scelerisque eu proin nec urna quis justo
                         adipiscing auctor ut auctor. feugiat </p>
                 </div>
                 <div class="col-md-4 Ver">
-                    <i class="fa fa-cog"></i>
+                    <i class="fa fa-gavel"></i>
                     <h4>Zabudowa wnęk</h4>
                     <p>Nulla consectetur ornare nibh, a auctor mauris scelerisque eu proin nec urna quis justo
                         adipiscing auctor ut auctor. feugiat </p>
                 </div>
                 <div class="col-md-4 Fully">
-                    <i class="fa fa-tablet"></i>
+                    <i class="fa fa-plug"></i>
                     <h4>Instalacje wodne i elektryczne</h4>
                     <p>Nulla consectetur ornare nibh, a auctor mauris scelerisque eu proin nec urna quis justo
                         adipiscing auctor ut auctor. feugiat </p>
@@ -173,7 +173,6 @@
                 <div class="col-md-12">
                     <span name="projects" id="projectss"></span>
                     <h3>Realizacje i projekty</h3>
-                    <p>Right here we've got something you gonna love</p>
                 </div>
             </div>
         </div>
@@ -367,9 +366,7 @@
                     <li>ul. </li>
                     <li>80-811 Gdańsk</li>
                     <li>tel. </li>
-                    <li><a href="#"><i class="section-subheading text-muted"><a href="mailto:aniazarem@gmail.com"
-                                                                                style="color: #777;">aniazarem@gmail.com</a>
-                    </li>
+                    <li>e-mail: </li>
                 </ul>
             </div>
         </div>
@@ -387,7 +384,7 @@
         <div class="container">
             <div class="row downLine">
                 <div class="col-md-6 text-left copy">
-                    <p>Copyright &copy; 2017 Anna Zaremba</p>
+                    <span class="copyright">Copyright &copy; <a href="http://marceen.pl" target="_blank">Anna Zaremba</a> 2017</span>
                 </div>
                 <div class="col-md-6 text-right dm">
                     <ul id="downMenu">

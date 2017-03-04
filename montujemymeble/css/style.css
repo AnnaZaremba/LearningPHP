@@ -56,7 +56,7 @@ body{
 	color:#fff;
 }
 .logo span{
-	color:#1fcdff;
+	color: #FF0000;
 }
 .logo p{
 	letter-spacing: 0.5px;
@@ -72,7 +72,7 @@ body{
 	text-decoration:none;
 }
 #menu a:active {
-color:#1fcdff;
+color: #FF0000;
 }
 #menu select {
 display: none;
@@ -80,7 +80,7 @@ display: none;
 
 #menu .active a {
 border:0;
-color:#1fcdff;
+color: #FF0000;
 }
 #menu .active a:focus{
 	outline: none;
@@ -128,7 +128,7 @@ border: none;
 #menu li a:hover{
 	border:none;
 	outline:none;
-	color:#1fcdff;
+	color: #FF0000;
 }
 .gallery {
 	height:500px;
@@ -138,7 +138,7 @@ border: none;
 	margin-top: 10px;
 }
 .camera_caption h2{
-	border-bottom:4px solid #1fcdff;
+	border-bottom:4px solid #FF0000;
 	font-family: 'Open Sans', sans-serif;
 	font-size:100px;
 	font-weight:700;
@@ -374,7 +374,7 @@ border: none;
 }
 
 
- .Des .fa-heart{
+ .Des .fa-home{
 	//margin-left: -14px;
 	background: url(../images/cir.png) no-repeat;
 	padding: 26px;
@@ -404,7 +404,7 @@ border: none;
 	margin-top: 12px;
 	line-height: 23px;
 }
-.fa-cog {
+.fa-gavel {
 	margin-left: 2px;
 	background: url(../images/cir.png) no-repeat;
 	padding: 26px;
@@ -422,7 +422,7 @@ border: none;
 .Fully  h4{
 	//margin-left: 20px;
 }
-.fa-tablet{
+.fa-plug{
 	//margin-left: 20px;
 	width:73px;
 	background: url(../images/cir.png) no-repeat;
@@ -504,7 +504,7 @@ border: none;
 	color:#2f2f2f;
 }
 .team ul li a:hover{
-	color:#1fcdff;
+	color: #FF0000;
 }
 /**/
 /**/
@@ -794,9 +794,9 @@ border: none;
 }
 .cBtn ul li:hover{
 	cursor:pointer;
-	background:#1fcdff;
+	background: #FF0000;
 	color:#fff;
-	box-shadow: 0px 2px 0px 0px #179abf;
+	box-shadow: 0px 2px 0px 0px #FF0000;
 }
 /**/
 
@@ -850,13 +850,13 @@ border: none;
 }
 #filter li a:hover{
 	cursor:pointer;
-	background:#1fcdff;
+	background: #FF0000;
 	//color:#fff;
-	box-shadow: 0px 2px 0px 0px #179abf;
+	box-shadow: 0px 2px 0px 0px #FF0000;
 }
 #filter .current{
-	background:#1fcdff;
-	box-shadow: 0px 2px 0px 0px #179abf;
+	background: #FF0000;
+	box-shadow: 0px 2px 0px 0px #FF0000;
 }
 /**/
 .pretty{
@@ -914,7 +914,7 @@ border: none;
 	font-weight: 300;
 }
 .view a:hover{
-	color:#1fcdff;
+	color: #FF0000;
 }
 .view ul{
 	display:block !important;
@@ -984,10 +984,11 @@ border: none;
 	font-weight: 700;
 }
 .cBtn .buy{
-	box-shadow: 0px 2px 0px 0px #179abf;
-	background:#1fcdff ;
+	box-shadow: 0px 2px 0px 0px #FF0000;
+	background: #FF0000;
 }
 .cBtn .buy:hover{
+	color: #FF483F;
 	background:#2f2f2f;
 	box-shadow: 0px 2px 0px 0px #000 ;
 }
@@ -1071,7 +1072,7 @@ border: none;
 	font-weight: 300;
 }
 .readMore{
-	color:#1fcdff;
+	color: #FF0000;
 }
 .readMore i{
 	font-size:13px;
@@ -1091,7 +1092,7 @@ border: none;
 	text-decoration:none;
 }
 .news h3 a:hover{
-	color: #1fcdff;
+	color: #FF0000;
 }
 .news ul{
 	margin-top: 14px;
@@ -1127,7 +1128,7 @@ border: none;
 	padding-right:5px;
 }
 .news ul li a:hover{
-	color:#1fcdff;
+	color: #FF0000;
 }
 .hrNews{
 	margin-top: 18px;
@@ -1285,8 +1286,8 @@ textarea {
 	font-weight: 700;
 }
 .forma .cBtn .send{
-	box-shadow: 0px 2px 0px 0px #179abf;
-	background:#1fcdff ;
+	box-shadow: 0px 2px 0px 0px #FF0000;
+	background: #FF0000;
 }
 .forma .cBtn .send:hover{
 	background:#2f2f2f;
@@ -1318,7 +1319,7 @@ textarea {
 }
 .cont a{
 	text-decoration:none;
-	color:#1fcdff;
+	color: #FF0000;
 }
 .cont a:hover{
 	color:#666666;
@@ -1516,8 +1517,8 @@ textarea {
 	color: #fff;
 	border-radius: 0 4px 4px 0;
 	text-decoration: none;
-	box-shadow: 0px 2px 0px 0px #179abf;
-	background: #1fcdff;
+	box-shadow: 0px 2px 0px 0px #FF0000;
+	background: #FF0000;
 	padding: 10px;
 	padding-right: 20px;
 	padding-left: 20px;
@@ -1965,9 +1966,9 @@ margin-bottom: 35px !important;
 }*/
 #filter li a.selected {
 	cursor:pointer;
-	background:#1fcdff;
+	background: #FF0000;
 	color:#fff;
-	box-shadow: 0px 2px 0px 0px #179abf;
+	box-shadow: 0px 2px 0px 0px #FF0000;
 }
 
 #projects .columns1 .project {
@@ -2068,5 +2069,19 @@ margin-bottom: 35px !important;
     }
 
 /**/
+
+a {
+	color: #FF0000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FF0000;
+	text-decoration: underline;
+}
+
+span.copyright {
+	color: #FFF;
+}
 
 
