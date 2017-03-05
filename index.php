@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<form method="post" action="galeria/index.php">
+<form method="post" action="galeria/galeria.php">
 
     <div><input type="submit" value="Galeria"></div>
 </form>

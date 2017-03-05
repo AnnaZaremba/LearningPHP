@@ -24,6 +24,7 @@
     <script type="text/javascript" src="js/myscript.js"></script>
     <script src="js/sorting.js" type="text/javascript"></script>
     <script src="js/jquery.isotope.js" type="text/javascript"></script>
+    <script src="js/montujemymeble.js" type="text/javascript"></script>
     <!--script type="text/javascript" src="js/jquery.nav.js"></script-->
 
 
@@ -67,7 +68,7 @@
                                 <li><a href="#about">Oferta</a></li>
                                 <li><a href="#project">Realizacje</a></li>
                                 <li><a href="#news">Linki</a></li>
-                                <li class="last"><a href="#contact">Kotakt</a></li>
+                                <li class="last"><a href="#contact">Kontakt</a></li>
                                 <!--li><a href="#features">Features</a></li-->
                             </ul>
                         </div>
@@ -81,17 +82,17 @@
                     <div class="camera_wrap camera_white_skin" id="camera_wrap_1">
                         <div data-thumb="" data-src="images/slides/blank.gif">
                             <div class="img-responsive camera_caption fadeFromBottom">
-                                <h2>Styl</h2>
-                            </div>
-                        </div>
-                        <div data-thumb="" data-src="images/slides/blank.gif">
-                            <div class="img-responsive camera_caption fadeFromBottom">
                                 <h2>Nowoczesność</h2>
                             </div>
                         </div>
                         <div data-thumb="" data-src="images/slides/blank.gif">
                             <div class="img-responsive camera_caption fadeFromBottom">
                                 <h2>Profesjonalizm</h2>
+                            </div>
+                        </div>
+                        <div data-thumb="" data-src="images/slides/blank.gif">
+                            <div class="img-responsive camera_caption fadeFromBottom">
+                                <h2>Styl</h2>
                             </div>
                         </div>
                     </div><!-- #camera_wrap_1 -->
@@ -103,26 +104,27 @@
         <div class="row">
             <div class="col-md-4 project">
                 <h4>Doradzamy</h4>
-                <p>Dolor sit amet, consectetur adipiscing elit quisque tempus eget diam et lorem a laoreet phasellus ut
-                    nisi id leo molestie. </p>
+                <p>tak, by uniknąć np. niezabudowanych przestrzeni. Doskonale radzimy sobie z rurami oraz przeróbkami
+                    szafek. </p>
             </div>
             <div class="col-md-4 project">
                 <h4>Projektujemy</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque tempus eget diam et. laoreet
-                    phasellus ut nisi id leo. </p>
+                <p> wysokiej jakości zabudowy, szafy oraz garderoby. W naszej ofercie znajdują się zarówno meble
+                    kuchenne o stylowym i nowoczesnym wyglądzie oraz takie, które są oparte na własnych
+                    lub wykonanych przez klienta projektach. </p>
             </div>
             <div class="col-md-4 project">
                 <h4 style="margin-left: 20px;">Montujemy</h4>
-                <p>Consectetur adipiscing elit quisque tempus eget diam et laoreet phasellus ut nisi id leo molestie
-                    adipiscing vitae a vel. </p>
+                <p>meble na terenie Trójmiasta (Gdańsk, Sopot, Gdynia) oraz okolic w promieniu 150 kilometrów.</p>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
             <div class="col-md-12 cBusiness">
-                <h3>The Best Way to Create Business Site &ndash; Attractive One Page</h3>
-                <h4>Discover elegant solution for your online business fast, reliable, affordable.</h4>
+                <h4>Sami wykonujemy pomiary i ustalamy czas montażu aby uniknąć pośpiechu,
+                    <p>który ma zły wpływ na jakość wykonanych prac.</p>
+                    <p>10% tańszy montaż niż bezpośrednio w IKEA przy zamówieniu przez telefon.</p></h4>
             </div>
         </div>
     </div>
@@ -137,20 +139,19 @@
                 <div class="col-md-4 Des">
                     <i class="fa fa-home"></i>
                     <h4>Profesjonalny montaż mebli</h4>
-                    <p>Nulla consectetur ornare nibh, a auctor mauris scelerisque eu proin nec urna quis justo
-                        adipiscing auctor ut auctor. feugiat </p>
+                    <p>Pomiar, doradztwo, pomoc w zakupach, transport.
+                    Kuchnie z indywidualnym projektem.</p>
                 </div>
                 <div class="col-md-4 Ver">
                     <i class="fa fa-gavel"></i>
                     <h4>Zabudowa wnęk</h4>
-                    <p>Nulla consectetur ornare nibh, a auctor mauris scelerisque eu proin nec urna quis justo
-                        adipiscing auctor ut auctor. feugiat </p>
+                    <p>Wysokiej jakości szafy i garderoby - projektowanie i montaż</p>
                 </div>
                 <div class="col-md-4 Fully">
                     <i class="fa fa-plug"></i>
                     <h4>Instalacje wodne i elektryczne</h4>
-                    <p>Nulla consectetur ornare nibh, a auctor mauris scelerisque eu proin nec urna quis justo
-                        adipiscing auctor ut auctor. feugiat </p>
+                    <p>W razie potrzeby dokonujemy przeróbki instalacji wodnej i elektrycznej.
+                    Posiadamy uprawnienia potrzebne do gwarancji AGD.</p>
                 </div>
             </div>
         </div>
@@ -158,8 +159,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 cBusiness">
-                <h3>The Best Way to Create Business Site &ndash; Attractive One Page</h3>
-                <h4>Discover elegant solution for your online business fast, reliable, affordable.</h4>
+                <h4>W trakcie montażu jesteśmy elastyczni
+                i otwarci na zmiany mogące wpłynąć na komfort dalszego użytkowania.</h4>
             </div>
         </div>
     </div>
@@ -193,56 +194,58 @@
             <div class="portfolio_block columns3   pretty" data-animated="fadeIn">
                 <div class="element col-sm-4   gall zabudowy">
                     <a class="plS" href="images/prettyPhotoImages/zab1.jpg" rel="prettyPhoto[gallery2]">
-                        <img class="img-responsive picsGall" src="images/prettyPhotoImages/zab1.jpg"
+                        <img class="img-responsive picsGall" src="images/prettyPhotoImages/zab1.jpg" vspace=10 hspace=10
                              alt="zabudowa"/>
                     </a>
                 </div>
                 <div class="element col-sm-4  gall kuchnie">
                     <a class="plS" href="images/prettyPhotoImages/2.jpg" rel="prettyPhoto[gallery2]">
-                        <img class="img-responsive picsGall" src="images/prettyPhotoImages/2.jpg"
+                        <img class="img-responsive picsGall" src="images/prettyPhotoImages/2.jpg" vspace=10 hspace=10
                              alt="kuchnia"/>
                     </a>
                 </div>
                 <div class="element col-sm-4  gall projekty">
                     <a class="plS" href="images/prettyPhotoImages/inst2.jpg" rel="prettyPhoto[gallery2]">
-                        <img class="img-responsive picsGall" src="images/prettyPhotoImages/inst2.jpg"
+                        <img class="img-responsive picsGall" src="images/prettyPhotoImages/inst2.jpg" vspace=10
+                             hspace=10
                              alt="instalacja"/>
                     </a>
                 </div>
                 <div class="element col-sm-4  gall  kuchnie">
                     <a class="plS" href="images/prettyPhotoImages/4.jpg" rel="prettyPhoto[gallery2]">
-                        <img class="img-responsive picsGall" src="images/prettyPhotoImages/4.jpg"
+                        <img class="img-responsive picsGall" src="images/prettyPhotoImages/4.jpg" vspace=10 hspace=10
+                             alt="kuchnia"/>
+                    </a>
+                </div>
+                <div class="element col-sm-4  gall  kuchnie">
+                    <a class="plS" href="images/prettyPhotoImages/6.jpg" rel="prettyPhoto[gallery2]">
+                        <img class="img-responsive picsGall" src="images/prettyPhotoImages/6.jpg" vspace=10 hspace=10
+                             alt="kuchnia"/>
+                    </a>
+                </div>
+                <div class="element col-sm-4  gall kuchnie">
+                    <a class="plS" href="images/prettyPhotoImages/1.jpg" rel="prettyPhoto[gallery2]">
+                        <img class="img-responsive picsGall" src="images/prettyPhotoImages/1.jpg" vspace=10 hspace=10
                              alt="kuchnia"/>
                     </a>
                 </div>
                 <div class="element col-sm-4  gall  projekty">
                     <a class="plS" href="images/prettyPhotoImages/inst1.jpg" rel="prettyPhoto[gallery2]">
-                        <img class="img-responsive picsGall" src="images/prettyPhotoImages/inst1.jpg"
+                        <img class="img-responsive picsGall" src="images/prettyPhotoImages/inst1.jpg" vspace=10
+                             hspace=10
                              alt="instalacja"/>
-                    </a>
-                </div>
-                <div class="element col-sm-4  gall  kuchnie">
-                    <a class="plS" href="images/prettyPhotoImages/6.jpg" rel="prettyPhoto[gallery2]">
-                        <img class="img-responsive picsGall" src="images/prettyPhotoImages/6.jpg"
-                             alt="kuchnia"/>
                     </a>
                 </div>
                 <div class="element col-sm-4   gall kuchnie">
                     <a class="plS" href="images/prettyPhotoImages/5.jpg" rel="prettyPhoto[gallery2]">
-                        <img class="img-responsive picsGall" src="images/prettyPhotoImages/5.jpg"
+                        <img class="img-responsive picsGall" src="images/prettyPhotoImages/5.jpg" vspace=10 hspace=10
                              alt="kuchnia"/>
                     </a>
                 </div>
                 <div class="element col-sm-4  gall zabudowy">
                     <a class="plS" href="images/prettyPhotoImages/zab2.jpg" rel="prettyPhoto[gallery2]">
-                        <img class="img-responsive picsGall" src="images/prettyPhotoImages/zab2.jpg"
+                        <img class="img-responsive picsGall" src="images/prettyPhotoImages/zab2.jpg" vspace=10 hspace=10
                              alt="zabudowa"/>
-                    </a>
-                </div>
-                <div class="element col-sm-4  gall kuchnie">
-                    <a class="plS" href="images/prettyPhotoImages/1.jpg" rel="prettyPhoto[gallery2]">
-                        <img class="img-responsive picsGall" src="images/prettyPhotoImages/1.jpg"
-                             alt="kuchnia"/>
                     </a>
                 </div>
             </div>
@@ -305,7 +308,7 @@
         <div class="container">
             <div class="row Ama">
                 <div class="col-md-12">
-                    <h3>Linki</h3>
+                    <h3>Firmy godne polecenia</h3>
                 </div>
             </div>
         </div>
@@ -314,16 +317,83 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12 cBusiness">
-            <h3>Firmy godne polecenia</h3>
             <h4>
-                AEG
-                ALVEUS
-                AMICA
-                AKPO
-                ARDO
-                ARISTON
-                BAUMATIC
-                BEKO
+                <link>
+                <a href="http://www.aeg-electrolux.pl/index.asp?prodid=&CurrentURL=/index.asp" target="_blank">AEG</a>
+                <link>
+                <a href="http://www.alveus.si/index.php?menu_item=PrvaStran&amp;lang_chg=po" target="_blank">ALVEUS</a>
+                <link>
+                <a href="http://www.amica.com.pl/" target="_blank">AMICA</a>
+                <link>
+                <a href="http://www.akpo.pl/" target="_blank">AKPO</a>
+                <link>
+                <a href="http://www.ardo.com.pl/" target="_blank">ARDO</a>
+                <link>
+                <a href="http://www.hotpoint-ariston.pl/ha/entryPoint.do" target="_blank">ARISTON</a>
+                <link>
+                <a href="http://www.baumatic-agd.pl/" target="_blank">BAUMATIC</a>
+                <link>
+                <a href="http://www.beko.com.pl/index.php" target="_blank">BEKO</a>
+                <link>
+                <a href="http://www.blomberg.pl/PL/Service/" target="_blank">BLOMBERG</a>
+                <link>
+                <a href="http://www.bomann.de/startseite/index.php" target="_blank">BOMANN</a>
+                <link>
+                <a href="http://www.bosch-home.pl/" target="_blank">BOSCH</a>
+                <link>
+                <a href="http://www.candy.pl/" target="_blank">CANDY</a>
+                <link>
+                <a href="http://www.climadiff.com/climadiff/fr/index.php" target="_blank">CLIMADIFF</a>
+                <link>
+                <a href="http://www.delonghi.kuchnie.pl/" target="_blank">DeLONGHI</a>
+                <link>
+                <a href="http://www.efbe-schott.de/" target="_blank">EFBE</a>
+                <link>
+                <a href="http://www.electrolux.pl/" target="_blank">ELECTROLUX</a>
+                <link>
+                <a href="http://www.ggv-exquisit.de/" target="_blank">EXQUISIT</a>
+                <link>
+                <a href="http://www.franke.pl/" target="_blank">FRANKE</a>
+                <link>
+                <a href="http://www.gorenje.pl/" target="_blank">GORENJE</a>
+                <link>
+                <a href="http://www.haier.pl/" target="_blank">HAIER</a>
+                <link>
+                <a href="http://www.hoover.pl/" target="_blank">HOOVER</a>
+                <link>
+                <a href="http://produkty.ikea.pl/km89/sprzet-agd" target="_blank">IKEA</a>
+                <link>
+                <a href="http://www.indesit.pl/" target="_blank">INDESIT</a>
+                <link>
+                <a href="http://www.lg.com/pl/sprzet-agd/" target="_blank">LG</a>
+                <link>
+                <a href="http://www.liebherr.pl/HG/pl-PL/default_pl-hg.wfw" target="_blank">LIEBHERR</a>
+                <link>
+                <a href="http://www.limatec-ag.ch/home/?L=3" target="_blank">LIMATEC</a>
+                <link>
+                <a href="http://www.mastercook.pl/" target="_blank">MASTERCOOK</a>
+                <link>
+                <a href="http://www.miele.pl/" target="_blank">MIELE</a>
+                <link>
+                <a href="http://www.oranier-kuechentechnik.de/de/startseite/" target="_blank">ORANIER</a>
+                <link>
+                <a href="http://www.panasonic.eu/whitegoods/" target="_blank">PANASONIC</a>
+                <link>
+                <a href="http://www.polar.com.pl/" target="_blank">POLAR</a>
+                <link>
+                <a href="http://www.samsung.com/pl/" target="_blank">SAMSUNG</a>
+                <link>
+                <a href="http://pl.severin.dimento.com/" target="_blank">SEVERIN</a>
+                <link>
+                <a href="http://www.siemens-home.pl/" target="_blank">SIEMENS</a>
+                <link>
+                <a href="http://www.teka.com/html/pl/home.php" target="_blank">TEKA</a>
+                <link>
+                <a href="http://www.wamslerweb.de/" target="_blank">WAMSLER</a>
+                <link>
+                <a href="http://www.whirlpool.pl/" target="_blank">WHIRPOOL</a>
+                <link>
+                <a href="http://www.zanussi.pl/" target="_blank">ZANUSSI</a>
             </h4>
         </div>
     </div>
@@ -345,28 +415,30 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9 col-xs-12 forma">
-                <form>
+                <form method="post" id="formularz_kontaktowy" action="mail.php">
                     <input type="text" class="col-md-6 col-xs-12 name" name='name' placeholder='Imię *'/>
-                    <input type="text" class="col-md-6 col-xs-12 Email" name='Email' placeholder='Email *'/>
-                    <input type="text" class="col-md-12 col-xs-12 Subject" name='Subject' placeholder='Temat'/>
-                    <textarea type="text" class="col-md-12 col-xs-12 Message" name='Message'
+                    <input type="text" class="col-md-6 col-xs-12 Email" name='email' placeholder='Email *'/>
+                    <input type="text" class="col-md-12 col-xs-12 Subject" name='subject' placeholder='Temat'/>
+                    <input type="hidden" name="access" value="irregeheim">
+                    <textarea type="text" class="col-md-12 col-xs-12 Message" name='message'
                               placeholder='Wiadomość *'></textarea>
                     <div class="cBtn col-xs-12">
                         <ul>
-                            <li class="clear"><a href="#"><i class="fa fa-times"></i>Wyczyść</a></li>
-                            <li class="send"><a href="#"><i class="fa fa-share"></i>Wyślij wiadomość</a></li>
+                            <li class="clear"><span><i class="fa fa-times"></i>Wyczyść</span></li>
+                            <li class="send"><span><i class="fa fa-share"></i>Wyślij wiadomość</span></li>
                         </ul>
                     </div>
                 </form>
             </div>
+
             <div class="col-md-3 col-xs-12 cont">
                 <ul>
                     <li>Przedsiębiorstwo</li>
-                    <li>Jan </li>
-                    <li>ul. </li>
+                    <li>Jan</li>
+                    <li>ul.</li>
                     <li>80-811 Gdańsk</li>
-                    <li>tel. </li>
-                    <li>e-mail: </li>
+                    <li>tel.</li>
+                    <li>e-mail:</li>
                 </ul>
             </div>
         </div>
@@ -384,7 +456,8 @@
         <div class="container">
             <div class="row downLine">
                 <div class="col-md-6 text-left copy">
-                    <span class="copyright">Copyright &copy; <a href="http://marceen.pl" target="_blank">Anna Zaremba</a> 2017</span>
+                    <span class="copyright">Copyright &copy; <a href="http://marceen.pl"
+                                                                target="_blank">Anna Zaremba</a> 2017</span>
                 </div>
                 <div class="col-md-6 text-right dm">
                     <ul id="downMenu">
