@@ -6,6 +6,11 @@
 </head>
 <body>
 
+<form method="post" action="galeria/index.php">
+
+    <div><input type="submit" value="Galeria"></div>
+</form>
+
 <form method="post" action="aniazarem/aniazarem_index.php">
 
     <div><input type="submit" value="Anna Zaremba"></div>
