@@ -12,9 +12,9 @@ function sprawdzEmail($email)
     $spr = '/^[a-zA-Z0-9.\-_]+@[a-zA-Z0-9\-.]+\.[a-zA-Z]{2,4}$/';
     if (preg_match($spr, $email)) {
         return true;
-    } else
+    } else {
         return false;
-
+    }
 }
 
 function sprawdzImie($imie)
@@ -23,8 +23,9 @@ function sprawdzImie($imie)
     if (preg_match($sprawdz, $imie)) {
         $imie = ucwords(strtolower($imie));
         return $imie;
-    } else
+    } else {
         return false;
+    }
 }
 
 function sprawdzTelefon($telefon)
@@ -32,8 +33,9 @@ function sprawdzTelefon($telefon)
     $sprawdz = '/^[0-9]{9}+$/';
     if (preg_match($sprawdz, $telefon)) {
         return true;
-    } else
+    } else {
         return false;
+    }
 }
 
 function sprawdzTresc($tresc)
@@ -41,8 +43,9 @@ function sprawdzTresc($tresc)
     $tresc = trim($tresc);
     if (strlen($tresc) < 5) {
         return false;
-    } else
+    } else {
         return $tresc;
+    }
 }
 
 function szukajWulgaryzmow($tresc)
@@ -50,8 +53,9 @@ function szukajWulgaryzmow($tresc)
     if (strpos($tresc, "cholera") == FALSE) // nie znaleziono szukanego wyrazu
     {
         echo "Można wyświetlić: $tresc.";
-    } else // znaleziono szukany wyraz
+    } else {// znaleziono szukany wyraz
         echo "Tekst zawiera wulgarne słownictwo.";
+    }
 }
 
 function sprawdzDomene($email)
@@ -60,10 +64,21 @@ function sprawdzDomene($email)
     echo $domena[1] . "<br/>";
 }
 
+function wysylanieMaila($do, $tresc, $imie, $email)
+{
+    //if (mail($do, $tresc, $imie, $email)) {
+    if (true) {
+        echo "Wysłano wiadomość";
+    } else {
+        echo "Błąd wysyłania";
+    }
+}
+
 $email = $_POST['email'];
 $imie = $_POST['imie'];
 $tel = $_POST['telefon'];
 $tresc = $_POST['tresc'];
+$do = "annpuf@wp.pl";
 $blad_danych = false;
 
 if (!sprawdzEmail($email)) {
@@ -99,6 +114,11 @@ if ($blad_danych) {
     echo "Treść: $tresc" . "<br/>";
 }
 
+if ($blad_danych) {
+    echo "Wystąpił jeden lub więcej błędów podczas przetwarzania danych." . "<br/>";
+} else {
+    wysylanieMaila($do, $tresc, $imie, $email);
+}
 ?>
 </body>
 </html>

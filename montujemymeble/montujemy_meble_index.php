@@ -1,3 +1,10 @@
+<?php
+include_once 'KontaktWalidator.php';
+include_once 'KontaktWysylka.php';
+
+$kontaktWalidator = new KontaktWalidator();
+$kontaktWysylka = new KontaktWysylka();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -140,7 +147,7 @@
                     <i class="fa fa-home"></i>
                     <h4>Profesjonalny montaż mebli</h4>
                     <p>Pomiar, doradztwo, pomoc w zakupach, transport.
-                    Kuchnie z indywidualnym projektem.</p>
+                        Kuchnie z indywidualnym projektem.</p>
                 </div>
                 <div class="col-md-4 Ver">
                     <i class="fa fa-gavel"></i>
@@ -151,7 +158,7 @@
                     <i class="fa fa-plug"></i>
                     <h4>Instalacje wodne i elektryczne</h4>
                     <p>W razie potrzeby dokonujemy przeróbki instalacji wodnej i elektrycznej.
-                    Posiadamy uprawnienia potrzebne do gwarancji AGD.</p>
+                        Posiadamy uprawnienia potrzebne do gwarancji AGD.</p>
                 </div>
             </div>
         </div>
@@ -160,7 +167,7 @@
         <div class="row">
             <div class="col-md-12 cBusiness">
                 <h4>W trakcie montażu jesteśmy elastyczni
-                i otwarci na zmiany mogące wpłynąć na komfort dalszego użytkowania.</h4>
+                    i otwarci na zmiany mogące wpłynąć na komfort dalszego użytkowania.</h4>
             </div>
         </div>
     </div>
@@ -413,35 +420,90 @@
         </div>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-md-9 col-xs-12 forma">
-                <form method="post" id="formularz_kontaktowy" action="mail.php">
-                    <input type="text" class="col-md-6 col-xs-12 name" name='name' placeholder='Imię *'/>
-                    <input type="text" class="col-md-6 col-xs-12 Email" name='email' placeholder='Email *'/>
-                    <input type="text" class="col-md-12 col-xs-12 Subject" name='subject' placeholder='Temat'/>
-                    <input type="hidden" name="access" value="irregeheim">
-                    <textarea type="text" class="col-md-12 col-xs-12 Message" name='message'
-                              placeholder='Wiadomość *'></textarea>
-                    <div class="cBtn col-xs-12">
-                        <ul>
-                            <li class="clear"><span><i class="fa fa-times"></i>Wyczyść</span></li>
-                            <li class="send"><span><i class="fa fa-share"></i>Wyślij wiadomość</span></li>
-                        </ul>
-                    </div>
-                </form>
-            </div>
+        <?php
+        $formularzWypelniony = false;
 
-            <div class="col-md-3 col-xs-12 cont">
-                <ul>
-                    <li>Przedsiębiorstwo</li>
-                    <li>Jan</li>
-                    <li>ul.</li>
-                    <li>80-811 Gdańsk</li>
-                    <li>tel.</li>
-                    <li>e-mail:</li>
-                </ul>
+        if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['subject']) && isset($_POST['message'])) {
+            $formularzWypelniony = true;
+        }
+
+        if ($formularzWypelniony) {
+            $imie = $_POST['name'];
+            $email = $_POST['email'];
+            $temat = $_POST['subject'];
+            $tresc = $_POST['message'];
+
+            $komunikatyBledu = [];
+            if (!$kontaktWalidator->sprawdzEmail($email)) {
+                $komunikatyBledu[] = "Niepoprawny adres e-mail";
+            }
+
+            if (!$kontaktWalidator->sprawdzImie($imie)) {
+                $komunikatyBledu[] = "Niepoprawne imię";
+            }
+            if (!$kontaktWalidator->sprawdzTemat($temat)) {
+                $komunikatyBledu[] = "Niepoprawny temat";
+            }
+
+            if (!$kontaktWalidator->sprawdzTresc($tresc)) {
+                $komunikatyBledu[] = "Niepoprawna treść";
+            }
+
+            ?>
+            <div class="row">
+                <div class="col-md-9 col-xs-12 forma" style="color: #1c1c1c;">
+                    <?php
+                    if (count($komunikatyBledu) > 0) {
+
+                        foreach ($komunikatyBledu as $value) {
+                            echo "<div style='font-size: large;'>" . $value . "</div>";
+                        }
+                    } else {
+                        if ($kontaktWysylka->wyslijMaila($temat, $tresc, $imie, $email)) {
+                            echo "Wiadomość została wysłana - dziekujemy!";
+                        } else {
+                            echo "Błąd wysyłania";
+                        }
+                    }
+                    ?>
+                </div>
             </div>
-        </div>
+            <?php
+        } else {
+            ?>
+            <div class="row">
+                <div class="col-md-9 col-xs-12 forma">
+                    <form method="post" id="formularz_kontaktowy" action="montujemy_meble_index.php">
+                        <input type="text" class="col-md-6 col-xs-12 name" name='name' placeholder='Imię *'/>
+                        <input type="text" class="col-md-6 col-xs-12 Email" name='email' placeholder='Email *'/>
+                        <input type="text" class="col-md-12 col-xs-12 Subject" name='subject' placeholder='Temat'/>
+                        <input type="hidden" name="access" value="irregeheim">
+                        <textarea type="text" class="col-md-12 col-xs-12 Message" name='message'
+                                  placeholder='Wiadomość *'></textarea>
+                        <div class="cBtn col-xs-12">
+                            <ul>
+                                <li class="clear"><span><i class="fa fa-times"></i>Wyczyść</span></li>
+                                <li class="send"><span><i class="fa fa-share"></i>Wyślij wiadomość</span></li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-md-3 col-xs-12 cont">
+                    <ul>
+                        <li>Przedsiębiorstwo</li>
+                        <li>Jan</li>
+                        <li>ul.</li>
+                        <li>80-811 Gdańsk</li>
+                        <li>tel.</li>
+                        <li>e-mail:</li>
+                    </ul>
+                </div>
+            </div>
+            <?php
+        }
+        ?>
+
     </div>
 
     <div class="line7">
