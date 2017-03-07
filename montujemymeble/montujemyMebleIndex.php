@@ -473,7 +473,7 @@ $kontaktWysylka = new KontaktWysylka();
             ?>
             <div class="row">
                 <div class="col-md-9 col-xs-12 forma">
-                    <form method="post" id="formularz_kontaktowy" action="montujemy_meble_index.php">
+                    <form method="post" id="formularz_kontaktowy" action="montujemyMebleIndex.php">
                         <input type="text" class="col-md-6 col-xs-12 name" name='name' placeholder='Imię *'/>
                         <input type="text" class="col-md-6 col-xs-12 Email" name='email' placeholder='Email *'/>
                         <input type="text" class="col-md-12 col-xs-12 Subject" name='subject' placeholder='Temat'/>
@@ -503,7 +503,6 @@ $kontaktWysylka = new KontaktWysylka();
             <?php
         }
         ?>
-
     </div>
 
     <div class="line7">
