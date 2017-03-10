@@ -2082,3 +2082,7 @@ a:hover {
 span.copyright, div.cBtn {
 	color: #FFF;
 }
+
+.logo div{
+	text-transform: none;
+}
