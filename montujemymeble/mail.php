@@ -61,7 +61,7 @@
                             }
                         } else {
                             if ($kontaktWysylka->wyslijMaila($temat, $tresc, $imie, $email)) {
-                                echo "<div style='font-size: large;'>Wiadomość została wysłana - dziekujemy!</div>";
+                                echo "<div style='font-size: large;'>Wiadomość została wysłana - dziękujemy!</div>";
                             } else {
                                 echo "Błąd wysyłania";
                             }
